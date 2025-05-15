@@ -81,7 +81,7 @@ public class JavaBasics{
 import java.util.*;
 public class Javabasics{
     public static void main(String args[]){
-        Scanner sc=new Scanner(System.in);
+        //Scanner sc=new Scanner(System.in);
         //int A=sc.nextInt();
         //int B=sc.nextInt();
         //int C=sc.nextInt();
@@ -99,11 +99,46 @@ public class Javabasics{
         System.out.println(total);
         float tax=total+(0.18f*total);
         System.out.println(tax);*/
+
+        /*int a=10;
+        int b=5;
+        System.out.println(a+b);
+        System.out.println("Difference is " + (a-b));*/
+
+        /*int a=25;
+        int b=a--;
+        System.out.println(a);
+        System.out.println(b);*/
+
+        //int a=20;
+        //int b=25;
+        //System.out.println((a!=b));
+
+        /*System.out.println((5>3)&&(3>5));
+        System.out.println((5>3)&&(7>5));
+        System.out.println((5>3)||(3>5));
+        System.out.println((5==3)||(3==5));*/
+        //System.out.println(!(3>2));
+
+        /*int a=10;
+        a+=10;
+        System.out.println(a);*/
+
+        /*int x,y,z;
+        z=y=x=2;
+        x+=y;
+        y-=z;
+        z /= (x+y);
+        System.out.println(x+ ""+y+""+z);*/
+
         
 
 
+
+        
     }
 }
+
 
 
                     
