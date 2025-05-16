@@ -268,7 +268,7 @@ import java.util.*;
                 default: System.out.println("Wrong number");
             }*/
 
-            /*int year=sc.nextInt();
+            int year=sc.nextInt();
             if(year%4==0) {
                 System.out.println("leap year");
             }
@@ -280,7 +280,7 @@ import java.util.*;
             }
             else{
                 System.out.println("not a Leap year");
-            }*/
+            }
 
             
 
