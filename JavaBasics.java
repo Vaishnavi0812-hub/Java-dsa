@@ -305,7 +305,7 @@ import java.util.*;
             }
             System.out.println();*/
 
-            int number=sc.nextInt();
+            /*int number=sc.nextInt();
             int sum=0;
             int i=1;
             while(i<=number){
@@ -313,9 +313,81 @@ import java.util.*;
                 i++;
               
             }
-            System.out.println(sum);
+            System.out.println(sum);*/
 
+            /*for(int i=1; i<=10; i++) {
+                System.out.println("Hello");
+            }*/
 
+            //for(int line=1; line<=4; line++) {
+            //    System.out.println("****");
+            //}
+            
+            /*int line=1;
+            while(line<=4){
+                System.out.println("****");
+                line++;
+            }*/
+
+            /*int n=123456;
+            while(n>0){
+                int lastdigit=n%10;
+                System.out.print(lastdigit);
+                n=n/10;
+            }*/
+
+            /*int n=10899;
+            int rev=0;
+            while(n>0){
+                int lastdigit=n%10;
+                rev=(rev*10)+ lastdigit;
+                n=n/10;
+            }
+            System.out.println(rev);*/
+
+            /*int counter=1;
+            do{
+                System.out.println("Hello");
+                counter++;
+            } while(counter<=5);*/
+
+            /*for (int i=0; i<=5; i++){
+                if(i==3){
+                    break;
+                }
+
+                System.out.println(i);
+            }
+            System.out.println("I am out of loop");*/
+
+            
+             /*do {
+                System.out.println("Enter your no");
+                int n=sc.nextInt();
+                if(n%10==0){
+                    break;
+                }
+                System.out.println(n);
+
+             }while(true);*/
+
+             /*for(int i=0;i<=5;i++){
+                if(i==3){
+                    continue;
+                }
+                System.out.println(i);
+             }*/
+
+             /*do{
+                System.out.println("Enter no");
+                int n=sc.nextInt();
+                if(n%10==0){
+                    continue;
+                }
+                System.out.println(n);
+             }while(true);*/
+
+             
 
             
 
