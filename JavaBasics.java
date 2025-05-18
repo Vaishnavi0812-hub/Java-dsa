@@ -268,7 +268,7 @@ import java.util.*;
                 default: System.out.println("Wrong number");
             }*/
 
-            int year=sc.nextInt();
+            /*int year=sc.nextInt();
             if(year%4==0) {
                 System.out.println("leap year");
             }
@@ -280,7 +280,42 @@ import java.util.*;
             }
             else{
                 System.out.println("not a Leap year");
+            }*/
+
+            /*int counter=0;
+            while(counter<100){
+                System.out.println("Hello");
+                counter++;
             }
+
+            System.out.println("Hello is printed 100 times");*/
+
+            /*int number=1;
+            while(number<=10){
+                System.out.print(number +"");
+                number++;
+            }
+            System.out.println();*/
+
+            /*int number=sc.nextInt();
+            int counter=1;
+            while(counter<=number){
+                System.out.print(counter + " ");
+                counter++;
+            }
+            System.out.println();*/
+
+            int number=sc.nextInt();
+            int sum=0;
+            int i=1;
+            while(i<=number){
+                sum+=i;
+                i++;
+              
+            }
+            System.out.println(sum);
+
+
 
             
 
