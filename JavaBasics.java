@@ -451,7 +451,17 @@ import java.util.*;
 
 System.out.println("Factorial is " + fact);*/
 
-             
+          /*for (int i=0; i<5; i++){
+            System.out.println("Hello");
+            i+=2;
+            System.out.println("Value of i is " + i);
+          }*/
+          
+          System.out.println("Enter a number");
+          int num=sc.nextInt();
+          for(int i=1; i<=10; i++){
+            System.out.println(num + "*" + i + "=" + num*i);
+          }
 
         }
     }
