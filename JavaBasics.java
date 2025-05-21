@@ -207,10 +207,10 @@ public class JavaBasics{
             default: System.out.println("None");
 
         }*/
-import java.util.*;
-    public class JavaBasics {
-        public static void main(String args[]){
-            Scanner sc=new Scanner(System.in);
+//import java.util.*;
+    //public class JavaBasics {
+        //public static void main(String args[]){
+            //Scanner sc=new Scanner(System.in);
             /*System.out.println("Enter 'a' ");
             int a=sc.nextInt();
             System.out.println("Enter 'b' ");
@@ -457,15 +457,15 @@ System.out.println("Factorial is " + fact);*/
             System.out.println("Value of i is " + i);
           }*/
           
-          System.out.println("Enter a number");
+          /*System.out.println("Enter a number");
           int num=sc.nextInt();
           for(int i=1; i<=10; i++){
             System.out.println(num + "*" + i + "=" + num*i);
-          }
+          }*/
 
-        }
-    }
 
+
+       
 
 
 
