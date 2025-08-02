@@ -153,7 +153,7 @@
             System.out.println();
           }*/
           
-public class patterns{
+/*public class patterns{
     public static void printhello() {
           System.out.println("Hello");
           System.out.println("Hello");
@@ -163,6 +163,36 @@ public class patterns{
 
     public static void main(String args[]){
         printhello();
+    }
+}*/
+/*import java.util.*;
+public class patterns{
+    public static void main(String args[]){
+        Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        int sum=a+b;
+        System.out.println(sum);
+
+    }
+}*/
+import java.util.*;
+public class patterns{
+    public static void main (String args[]){
+    Scanner sc=new Scanner(System.in);
+    int income=sc.nextInt();
+    int tax;
+    if(income<=500000){
+        tax=0;
+    }
+    else if(income>500000 && income<1000000){
+        tax=(int)(0.2*income);
+    }
+    else {
+        tax=(int)(0.3*income);
+    }
+    System.out.println("Your tax is"+ tax);
+
     }
 }
 
