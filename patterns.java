@@ -180,20 +180,95 @@ import java.util.*;
 public class patterns{
     public static void main (String args[]){
     Scanner sc=new Scanner(System.in);
-    int income=sc.nextInt();
-    int tax;
-    if(income<=500000){
-        tax=0;
+    /*int number=sc.nextInt();
+    int i=1;
+    int sum=0;
+    while(i<=number){
+        sum=sum+i;
+        i++;
+        
     }
-    else if(income>500000 && income<1000000){
-        tax=(int)(0.2*income);
+    System.out.println(sum);*/
+
+    /*int num=sc.nextInt();
+    while(num>0){
+        int lastdigit=num%10;
+        System.out.print(lastdigit);
+        num = num/10;
     }
-    else {
-        tax=(int)(0.3*income);
+    System.out.println();*/
+
+    /*int i=0;
+    do{
+        System.out.println("Tanya");
+        i++;
+    }while(i<=5);*/
+
+    /*do{
+        System.out.println("Enter your num : ");
+        int num=sc.nextInt();
+        if(num%10==0){
+            continue;
+        }
+        System.out.println(num);
+    } while(true);*/
+
+    /*System.out.println("Enter your number :");
+    int num=sc.nextInt();
+    if(num==2){
+        System.out.println(num + "is prime");
     }
-    System.out.println("Your tax is"+ tax);
+    boolean isPrime=true;
+    for(int i=2;i<=Math.sqrt(num);i++){
+        if(num%i==0){
+            isPrime=false;
+        }
+    }
+    if(isPrime==true){
+        System.out.println(num + " is prime");
+    }
+    else{
+        System.out.println(num + " is not prime");
+    }*/
+
+    /*int number;
+    int choice;
+    int evensum=0;
+    int oddsum=0;
+    do{
+        System.out.println("Enter a number:");
+        number=sc.nextInt();
+        if(number%2==0){
+            evensum+=number;
+        }
+        else{
+            oddsum+=number;
+        }
+        System.out.println("If u wish to continue press  1 else 0");
+        choice=sc.nextInt();
+      }while(choice==1);
+
+      System.out.println("Sum of even numbers is " + evensum);
+      System.out.println("Sum of odd numbers is " + oddsum);*/
+
+      /*System.out.println("Enter a number : ");
+      int num=sc.nextInt();
+      for(int i=1;i<=10;i++){
+        System.out.println(num + "*" + i + "=" + num*i);
+      }*/
+
+      /*int fact=1;
+      System.out.println("Enter a number");
+      int num=sc.nextInt();
+      for(int i=1;i<=num;i++){
+        fact*=i;
+      }
+      System.out.println("Factorial is " + fact);*/
+      
 
     }
-}
+    
+    }
+
 
     
