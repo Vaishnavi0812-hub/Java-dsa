@@ -264,11 +264,20 @@ public class patterns{
         fact*=i;
       }
       System.out.println("Factorial is " + fact);*/
+    
       
-
+      for(int i=1;i<=5;i++){
+        int val=i;
+        for(int j=1;j<=i;j++){ 
+            System.out.print(val);
+        }
+        System.out.println();
+      }
     }
     
     }
 
 
     
+
+      
