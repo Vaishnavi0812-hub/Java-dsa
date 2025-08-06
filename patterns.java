@@ -176,7 +176,8 @@ public class patterns{
 
     }
 }*/
-import java.util.*;
+
+/*import java.util.*;
 public class patterns{
     public static void main (String args[]){
     Scanner sc=new Scanner(System.in);
@@ -264,19 +265,67 @@ public class patterns{
         fact*=i;
       }
       System.out.println("Factorial is " + fact);*/
-    
-      
-      for(int i=1;i<=5;i++){
-        int val=i;
-        for(int j=1;j<=i;j++){ 
-            System.out.print(val);
-        }
-        System.out.println();
-      }
-    }
-    
-    }
 
+
+      import java.util.*;
+
+      public class patterns {
+        /*public static void printhello(){
+            System.out.println("Hello");
+            System.out.println("Hello");
+            return;
+        }*/
+
+        /*public static int calculatesum(int a,int b){
+            
+            int sum=a+b;
+            return sum;
+        }*/
+
+        /*public static void 
+        public static void main (String  args[]){
+            Scanner sc=new Scanner(System.in);
+            int a=sc.nextInt();
+            int b=sc.nextInt();
+            int sum=calculatesum(a,b);
+            System.out.println("The sum is " + sum);
+        }*/
+
+        /*public static int multiply(int a,int b){
+            int product=a*b;
+            return product;
+        }
+
+        public static int factorial(int n){
+            int fact=1;
+            for(int i=1;i<=n;i++){
+                fact=fact*i;
+            }
+            return fact;
+        }*/
+
+
+        /*public static void main(String args[]){
+            Scanner sc=new Scanner(System.in);
+            int a=10;
+            int b=5;
+            int product=multiply(a,b);
+            System.out.println("Product is " + product);
+            int prod=multiply(25,25);
+            System.out.println("a*b= " + prod);
+        }*/
+        
+        public static int bincoeff(int n,int r){
+            n fact=fact
+        }
+        public static void main(String args[]){
+            Scanner sc=new Scanner(System.in);
+            System.out.println(factorial(4));
+        }
+            
+        }
+
+      
 
     
 
