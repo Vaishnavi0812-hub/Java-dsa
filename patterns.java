@@ -449,7 +449,7 @@ public class patterns{
 
            }*/
 
-           public static boolean isPalindrome(int n){
+           /*public static boolean isPalindrome(int n){
             int palindrome=n; //copied number to variable
             int reverse=0;
 
@@ -478,6 +478,25 @@ public class patterns{
                 System.out.println("Number " + palindrome + " is not a palindrome");
             }
             
+           }*/
+
+           public static int sumOfInteger(int n){
+            int sum=0;
+            while(n>0){
+                int lastDigit=n%10;
+                sum=sum+lastDigit;
+                n=n/10;
+            }
+            return sum;
+
+           }
+           public static void main(String args[]){
+            System.out.println("Enter a number : ");
+            Scanner sc=new Scanner(System.in);
+            int n=sc.nextInt();
+            System.out.println("The sum of given integer is " + sumOfInteger(n));
+
+
            }
         }
 
