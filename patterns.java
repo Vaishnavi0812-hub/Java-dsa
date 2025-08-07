@@ -328,7 +328,7 @@ public class patterns{
             System.out.println(binCoeff(5,2));
         }*/
 
-        public static int sum(int a,int b){
+        /*public static int sum(int a,int b){
             return a+b;
         }
         public static int sum(int a, int b, int c){
@@ -342,7 +342,23 @@ public class patterns{
             System.out.println(sum(2,3));
             System.out.println(sum(3,4,5));
             System.out.println(sum(3.2f,7.8f));
+        }*/
+
+        public static boolean isPrime(int n){
+            if(n==2){
+                return true;
+            }
+            for(int i=2;i<=Math.sqrt(n);i++){
+                if(n%i==0){
+                    return false;
+                }
+            }
+            return true;
         }
+        public static void main(String args[]){
+            System.out.println(isPrime(12));
+        }
+
 
             
         }
