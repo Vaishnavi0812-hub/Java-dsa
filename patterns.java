@@ -385,12 +385,106 @@ public class patterns{
             binToDec(1000);
         }*/
 
+        /*public static void decToBin(int n){
+            int myNum=n;
+            int binNum=0;
+            int pow=0;
+
+            while(n>0){
+                int rem = n%2;
+                binNum = binNum + (rem* (int)Math.pow(10,pow));
+                pow++;
+
+                n=n/2;
+            }
+            System.out.println("The binary number of " + myNum + " is " + binNum);
+        }
+
+        public static void main(String args[]){
+            decToBin(8);
+        }*/
+
+        /*public static double average(double a,double b,double c){
+            double average=(a+b+c)/3;
+            return average;
+        }
+        public static void main(String args[]){
+            System.out.println(average(3.2,4.2,5.2));
+        }*/
+
         
+           /*public static double average(double a, double b, double c){
+            return (a+b+c)/3;
+           }
+            
+           public static void main(String args[]){
+            Scanner sc=new Scanner(System.in);
+            System.out.println("Enter your first number : ");
+            double a=sc.nextDouble();
+            System.out.println("Enter your second number : ");
+            double b=sc.nextDouble();
+            System.out.println("Enter your third number : ");
+            double c=sc.nextDouble();
+            System.out.println("The average of 3 numbers is " + average(a,b,c));
+           }*/
+
+           /*public static boolean isEven(int n){
+            if(n%2==0){
+                return true;
+            }
+            else {
+                return false;
+            }
+           }
+           public static void main(String args[]){
+            Scanner sc=new Scanner(System.in);
+            System.out.println("Enter your number");
+            int n=sc.nextInt();
+            if(isEven(n)){
+                System.out.println("Even number");
+            }
+            else{
+                System.out.println("Odd number");
+            }
+
+           }*/
+
+           public static boolean isPalindrome(int n){
+            int palindrome=n; //copied number to variable
+            int reverse=0;
+
+            while(palindrome>0){
+                int remainder=palindrome%10;
+                reverse=reverse *10+ remainder;
+                palindrome=palindrome/10;
+            }
+            if(n==reverse){
+                return true;
+            }
+            else {
+                return false;
+            }
+        
+           }
+           public static void main(String args[]){
+            Scanner sc=new Scanner(System.in);
+            System.out.println("Enter your number");
+            int palindrome=sc.nextInt();
+
+            if(isPalindrome(palindrome)){
+                System.out.println("Number " + palindrome + " is  a palindrome");
+            }
+            else{
+                System.out.println("Number " + palindrome + " is not a palindrome");
+            }
+            
+           }
+        }
 
 
 
             
-        }
+        
 
       
 
