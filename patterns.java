@@ -344,7 +344,7 @@ public class patterns{
             System.out.println(sum(3.2f,7.8f));
         }*/
 
-        public static boolean isPrime(int n){
+        /*public static boolean isPrime(int n){
             if(n==2){
                 return true;
             }
@@ -355,9 +355,38 @@ public class patterns{
             }
             return true;
         }
-        public static void main(String args[]){
-            System.out.println(isPrime(12));
+
+        public static void primeRange(int n){
+            for(int i=2;i<=n;i++){
+                if(isPrime(i)){
+                    System.out.print(i + " ");
+                }
+            }
+            System.out.println();
         }
+        public static void main(String args[]){
+            primeRange(20);
+        }*/
+
+        /*public static void binToDec(int binNum){
+            int myNum=binNum;
+            int decNum=0;
+            int pow=0;
+            while(binNum>0){
+                int LastDigit=binNum%10;
+                decNum= decNum + (LastDigit * (int)Math.pow(2,pow));
+                pow++;
+
+                binNum=binNum/10;
+            }
+            System.out.println("The decimal of " + myNum + " is " + decNum);
+        } 
+        public static void main(String args[]){
+            binToDec(1000);
+        }*/
+
+        
+
 
 
             
