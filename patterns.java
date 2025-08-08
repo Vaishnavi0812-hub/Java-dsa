@@ -267,7 +267,7 @@ public class patterns{
       System.out.println("Factorial is " + fact);*/
 
 
-      import java.util.*;
+      /*import java.util.*;
 
       public class patterns {
         /*public static void printhello(){
@@ -478,9 +478,9 @@ public class patterns{
                 System.out.println("Number " + palindrome + " is not a palindrome");
             }
             
-           }*/
+           }
 
-           public static int sumOfInteger(int n){
+           /*public static int sumOfInteger(int n){
             int sum=0;
             while(n>0){
                 int lastDigit=n%10;
@@ -497,8 +497,23 @@ public class patterns{
             System.out.println("The sum of given integer is " + sumOfInteger(n));
 
 
+           }*/
+           public class patterns{
+            public static void main(String args[]){
+                for(int i=5;i>=1;i--){
+                    for(int j=1;j<=i;j++){
+                        System.out.print(j);
+                    }
+                    System.out.println();
+                }
+            
            }
-        }
+
+           }
+           
+          
+
+        
 
 
 
