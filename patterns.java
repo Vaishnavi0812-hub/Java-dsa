@@ -499,7 +499,48 @@ public class patterns{
 
            }*/
            public class patterns{
-            public static void hollowRectangle(int totalRows, int totalCols){
+            public static void flyodsTriangle(int n){
+                int num=1;
+                for(int i=1;i<=n;i++){
+                    for(int j=1;j<=i;j++){
+                        System.out.print(num);
+                        num++;
+                    }
+                    System.out.println();
+                }
+            }
+            /*public static void invertedHalfPyramid(int n){
+                for(int i=1;i<=n;i++){
+                    for(int j=1;j<=n-i+1;j++){
+                        System.out.print(j);
+                    }
+                    System.err.println();
+                }
+            }*/
+            public static void main(String args[]){
+                flyodsTriangle(5);
+                //invertedHalfPyramid(5);
+
+            }
+
+             /*public static void halfPyramid(int n){
+
+                for(int i=1;i<=n;i++){
+                    for(int s=1;s<=n-i;s++){
+                        System.out.print(" ");
+                    }
+                    for(int j=1;j<=i;j++){
+                        System.out.print("*");
+                    }
+                    System.out.println();
+                }
+                
+            }
+            public static void main(String args[]){
+                halfPyramid(5);
+            }*/
+
+           /*public static void hollowRectangle(int totalRows, int totalCols){
                 //outer loop
                 for(int i=1;i<=totalRows;i++){
                     for(int j=1;j<=totalCols;j++){
@@ -512,9 +553,12 @@ public class patterns{
                     }
                     System.out.println();
                 }
-            }
-            public static void main(String args[]){
-                hollowRectangle(4,5);
+            }*/
+
+            
+            /*public static void main(String args[]){
+                hollowRectangle(4,5);*/
+
 
 
                 /*for(int i=1;i<=4;i++){
@@ -533,7 +577,7 @@ public class patterns{
 
                 
             }
-        }
+        
             
            
 
