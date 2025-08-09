@@ -498,8 +498,59 @@ public class patterns{
 
 
            }*/
-           public class patterns{
-            public static void flyodsTriangle(int n){
+           //public class patterns{
+            //public static void butterflypattern(int n){
+                //1st half
+                //for(int i=1;i<=n;i++){
+                    //stars
+                    /*for(int j=1;j<=i;j++){
+                        System.out.print("*");
+                    }
+                    //spaces
+                    for(int j=1;j<=2*(n-i);j++){
+                        System.out.print(" ");
+                    }
+                    //stars
+                    for(int j=1;j<=i;j++){
+                        System.out.print("*");
+                    }
+                    System.out.println();
+                }
+                //2nd half
+                for(int i=n;i>=1;i--){
+                    //stars
+                    for(int j=1;j<=i;j++){
+                        System.out.print("*");
+                    }
+                    //spaces
+                    for(int j=1;j<=2*(n-i);j++){
+                        System.out.print(" ");
+                    }
+                    //stars
+                    for(int j=1;j<=i;j++){
+                        System.out.print("*");
+                    }
+                    System.out.println();
+                }
+            }
+           
+
+            /*public static void zeroOneTriangle(int n){
+                for(int i=1;i<=n;i++){
+                    for(int j=1;j<=i;j++){
+                        if((i+j)%2==0){
+                            System.out.print("1");
+                        }
+                        else{
+                            System.out.print("0");
+                        }
+                        
+                    }
+                    System.out.println();
+                }
+            }*/
+
+            /*public static void flyodsTriangle(int n){
                 int num=1;
                 for(int i=1;i<=n;i++){
                     for(int j=1;j<=i;j++){
@@ -508,7 +559,7 @@ public class patterns{
                     }
                     System.out.println();
                 }
-            }
+            }*/
             /*public static void invertedHalfPyramid(int n){
                 for(int i=1;i<=n;i++){
                     for(int j=1;j<=n-i+1;j++){
@@ -517,11 +568,13 @@ public class patterns{
                     System.err.println();
                 }
             }*/
-            public static void main(String args[]){
-                flyodsTriangle(5);
+            //public static void main(String args[]){
+                //zeroOneTriangle(5);
+                //flyodsTriangle(5);
                 //invertedHalfPyramid(5);
+                //butterflypattern(8);
 
-            }
+            //}
 
              /*public static void halfPyramid(int n){
 
@@ -576,7 +629,72 @@ public class patterns{
                 }*/
 
                 
+          public class patterns{
+            public static void diamond(int n){
+                //1st half
+                for(int i=1;i<=n;i++){
+                    //spaces
+                    for(int j=1;j<=(n-i);j++){
+                        System.out.print(" ");
+                    }
+                    //stars
+                    for(int j=1;j<=(2*i)-1;j++){
+                        System.out.print("*");
+                    }
+                    System.out.println();
+                }
+                //2nd half
+                for(int i=n;i>=1;i--){
+                    //spaces
+                    for(int j=1;j<=(n-i);j++){
+                        System.out.print(" ");
+                    }
+                    //stars
+                    for(int j=1;j<=(2*i)-1;j++){
+                        System.out.print("*");
+                    }
+                    System.out.println();
+                }
             }
+
+            /*public static void hollowRhombus(int n){
+                for(int i=1;i<=n;i++){
+                    //spaces
+                    for(int j=1;j<=(n-i);j++){
+                        System.out.print(" ");
+                    }
+                    //hollow rectangle - stars
+                    for(int j=1;j<=n;j++){
+                        if(i==1||i==n||j==1||j==n){
+                            System.out.print("*");
+                        }
+                        else{
+                            System.out.print(" ");
+                        }
+                    }
+                    System.out.println();
+                }
+            }*/
+
+            /*public static void solidRhombus(int n){
+                for(int i=1;i<=n;i++){
+                    //spaces
+                    for(int j=1;j<=(n-i);j++){
+                        System.out.print(" ");
+                    }
+                    //stars
+                    for(int j=1;j<=n;j++){
+                       System.out.print("*"); 
+                    }
+                    System.out.println();
+                }               
+            }*/
+            public static void main(String args[]){
+                //solidRhombus(5);
+                //hollowRhombus(5);
+                diamond(4);
+            }
+          }  
         
             
            
