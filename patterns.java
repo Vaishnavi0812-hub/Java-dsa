@@ -630,7 +630,28 @@ public class patterns{
 
           import java.util.*;     
           public class patterns{
+            public static boolean isPrime(int n){
+                if(n==2){
+                    return true;
+                }
+                for(int i=2;i<=Math.sqrt(n);i++){
+                    if(n%i==0){
+                        return false;
+                    }
+                }
+                    return true;
+                }
             
+            
+             public static void main(String args[]){
+                Scanner sc=new Scanner(System.in);
+                System.out.println(" Enter a number : ");
+                int n=sc.nextInt();
+                System.out.println(isPrime(n));
+                }
+          } 
+        
+
             /*public static int factorial(int n){
                 int fact=1;
                 for(int i=1;i<=n;i++){
@@ -642,8 +663,7 @@ public class patterns{
                 //int sum=a+b;
                 //return sum;
             //}
-            public static void main(String args[]){
-                Scanner sc=new Scanner(System.in);
+           
 
 
                 //int n=sc.nextInt();
@@ -716,8 +736,7 @@ public class patterns{
                 //solidRhombus(5);
                 //hollowRhombus(5);
                 //diamond(4);
-            }
-          }  
+            
         
             
            
