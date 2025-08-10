@@ -628,9 +628,32 @@ public class patterns{
                     System.err.println();
                 }*/
 
-                
+          import java.util.*;     
           public class patterns{
-            public static void diamond(int n){
+            
+            /*public static int factorial(int n){
+                int fact=1;
+                for(int i=1;i<=n;i++){
+                    fact=fact*i;
+                }
+                return fact;
+            }*/
+            //public static int calculateSum(int a,int b){
+                //int sum=a+b;
+                //return sum;
+            //}
+            public static void main(String args[]){
+                Scanner sc=new Scanner(System.in);
+
+
+                //int n=sc.nextInt();
+                //System.out.println(factorial(n));
+
+                /*int a=sc.nextInt();
+                int b=sc.nextInt();
+                System.out.println(calculateSum(a,b));*/
+                
+            /*public static void diamond(int n){
                 //1st half
                 for(int i=1;i<=n;i++){
                     //spaces
@@ -655,7 +678,7 @@ public class patterns{
                     }
                     System.out.println();
                 }
-            }
+            }*/
 
             /*public static void hollowRhombus(int n){
                 for(int i=1;i<=n;i++){
@@ -689,10 +712,10 @@ public class patterns{
                     System.out.println();
                 }               
             }*/
-            public static void main(String args[]){
+            
                 //solidRhombus(5);
                 //hollowRhombus(5);
-                diamond(4);
+                //diamond(4);
             }
           }  
         
