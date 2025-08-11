@@ -1,8 +1,44 @@
 import java.util.*;
 public class Arrays{
+    public static void update(int marks[], int nonChangable ){
+        nonChangable=10;
+        for(int i=0;i<marks.length;i++){
+            marks[i]=marks[i] + 1;
+        }
+    }
     public static void main(String args[]){
-        //creating an array of size 100
-        int marks[]=new int[100];
+        int marks[]={95,96,97};
+        int nonChangable=5;
+        update(marks, nonChangable);
+        System.out.println(nonChangable);
+
+        
+        System.out.println(marks[i]);
+        
+        
+        
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        /*int marks[]=new int[100];
         Scanner sc=new Scanner(System.in);
 
         System.out.println("Enter your physics marks :");
@@ -22,14 +58,12 @@ public class Arrays{
         System.out.println("Length of the array is : " + marks.length);
 
 
-        //marks[2]=100; //marks[2] + 1;
-        System.out.println("Maths marks : " + marks[2]);
+        marks[2]=100; marks[2] + 1;
+        System.out.println("Maths marks : " + marks[2]);*/
 
 
 
         
 
 
-}
 
-}
