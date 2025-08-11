@@ -628,7 +628,7 @@ public class patterns{
                     System.err.println();
                 }*/
 
-          import java.util.*;     
+          /*import java.util.*;     
           public class patterns{
             public static boolean isPrime(int n){
                 if(n==2){
@@ -640,16 +640,16 @@ public class patterns{
                     }
                 }
                     return true;
-                }
+                }*/
             
             
-             public static void main(String args[]){
+             /*public static void main(String args[]){
                 Scanner sc=new Scanner(System.in);
                 System.out.println(" Enter a number : ");
                 int n=sc.nextInt();
                 System.out.println(isPrime(n));
                 }
-          } 
+          }*/ 
         
 
             /*public static int factorial(int n){
@@ -736,6 +736,7 @@ public class patterns{
                 //solidRhombus(5);
                 //hollowRhombus(5);
                 //diamond(4);
+                
             
         
             
