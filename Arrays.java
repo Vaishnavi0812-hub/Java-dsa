@@ -1,6 +1,115 @@
 import java.util.*;
 public class Arrays{
-    public static void update(int marks[], int nonChangable ){
+    public static void reverse(int numbers[]) {
+        int first=0, last=numbers.length-1;
+
+        while(first<last){
+            int temp=numbers[last];
+            numbers[last]=numbers[first];
+            numbers[first]=temp;
+            
+            first++;
+            last--;
+
+        }
+
+    }
+    public static void main(String args[]){
+        int numbers[]={2,4,6,8,10};
+
+        reverse(numbers);
+        for(int i=0;i<numbers.length;i++){
+            System.out.print(numbers[i] + " ");
+        }
+        System.out.println();
+
+    }
+}
+
+    /*public static int binarySearch(int numbers[], int key){
+        int start=0 , end=numbers.length-1;
+        
+        while(start<=end){
+            int mid=(start+end)/2;
+            if(numbers[mid]==key){
+                return mid; //found
+            }
+            if(numbers[mid]>key){
+                end=mid-1; //left
+            }
+            else {
+                start=mid+1; //right
+            }
+        }
+        return -1;
+
+    }*/
+
+    /*public static void main(String args[]){
+        int numbers[]={2,4,6,8,10,12};
+        int key=10;
+
+        System.out.println("Index for key is " + binarySearch(numbers,key));
+    }*/
+
+    /*public static int getLargest(int numbers[]){
+        int largest=Integer.MIN_VALUE; 
+        int smallest=Integer.MAX_VALUE;
+
+        for(int i=0;i<numbers.length;i++){
+            if(largest < numbers[i]){
+                largest=numbers[i];
+            }
+            if(smallest > numbers[i]){
+                smallest=numbers[i];
+            }
+        }
+        System.out.println("Smallest value is " + smallest);
+        return largest;
+    }*/
+    
+        /*int numbers[]={1,2,6,3,5};
+
+        System.out.println("Largest value is " + getLargest(numbers));
+
+
+
+    }*/
+
+    
+    
+    
+    
+    
+    
+    
+    /*public static int linearSearch(int numbers[], int key){
+        for(int i=1;i<numbers.length;i++){
+            if(numbers[i]==key){
+                return i;
+            }
+        }
+        return -1;
+
+    }/* */
+
+    /*public static void main(String args[]){
+        int numbers[]={2,4,6,8,10,12};
+        int key=10;
+
+        int index=linearSearch(numbers,key);
+        if(index== -1){
+            System.out.println("Not found in array");
+        }
+
+        else{
+            System.out.println("Index of the key is " + index);
+        }
+    }*/
+
+
+
+    /*public static void update(int marks[], int nonChangable ){
         nonChangable=10;
         for(int i=0;i<marks.length;i++){
             marks[i]=marks[i] + 1;
@@ -14,28 +123,10 @@ public class Arrays{
 
         
         System.out.println(marks[i]);
+
         
         
-        
-    }
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    }*/
 
 
         /*int marks[]=new int[100];
