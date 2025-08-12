@@ -1,6 +1,20 @@
 import java.util.*;
 public class Arrays{
-    public static void reverse(int numbers[]) {
+    public static void main(String args[]){
+        int numbers[]={2,4,6,8,10};
+    }
+}
+
+
+
+
+
+
+
+
+
+
+    /*public static void reverse(int numbers[]) {
         int first=0, last=numbers.length-1;
 
         while(first<last){
@@ -13,19 +27,16 @@ public class Arrays{
 
         }
 
-    }
-    public static void main(String args[]){
-        int numbers[]={2,4,6,8,10};
+    }*/
+    
 
-        reverse(numbers);
+        /*reverse(numbers);
         for(int i=0;i<numbers.length;i++){
             System.out.print(numbers[i] + " ");
         }
-        System.out.println();
+        System.out.println();*/
 
-    }
-}
-
+    
     /*public static int binarySearch(int numbers[], int key){
         int start=0 , end=numbers.length-1;
         
