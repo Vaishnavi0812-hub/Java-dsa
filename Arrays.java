@@ -1,9 +1,54 @@
 import java.util.*;
 public class Arrays{
+    public static void printSubArrays(int numbers[]){
+        int tp=0;
+        
+
+        for(int i=0;i<numbers.length;i++){
+            int start=i;
+
+            for(int j=i;j<numbers.length;j++){
+            int end=j;
+            int sum=0;
+
+                for(int k=start;k<=end;k++){
+                    System.out.print(numbers[k] + " ");
+                    sum=sum+numbers[k];
+                }
+                
+                System.out.println("Sum is " + sum);
+                tp++;
+                
+            }
+            System.out.println();
+            
+        }
+        System.out.println("Total subarrays are" + tp);
+    }
+
     public static void main(String args[]){
         int numbers[]={2,4,6,8,10};
+        printSubArrays(numbers);
     }
 }
+    /*public static void printPairs(int numbers[]){
+        int tp=0;
+        for(int i=0; i<numbers.length;i++){
+            int current=numbers[i];
+            for(int j=i+1; j<numbers.length;j++){
+                System.out.print("(" + current + "," + numbers[j] + ")" );
+                tp++;
+
+            }
+            System.err.println();
+        }
+        System.out.println("Total number of pairs is" + tp);
+    }
+    public static void main(String args[]){
+        int numbers[]={2,4,6,8,10};
+        printPairs(numbers);
+    }*/
+
 
 
 
@@ -86,13 +131,6 @@ public class Arrays{
 
 
     }*/
-
-    
-    
-    
-    
-    
-    
     
     /*public static int linearSearch(int numbers[], int key){
         for(int i=1;i<numbers.length;i++){
