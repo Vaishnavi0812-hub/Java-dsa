@@ -1,12 +1,34 @@
 import java.util.*;
 public class Arrays{
-    public static int trappedRainWater(int height[]){
+    public static int buyAndSellStocks(int prices[]){
+        int buyingPrice=Integer.MAX_VALUE;
+        int maxProfit=0;
+
+        for(int i=0;i<prices.length;i++){
+            if(buyingPrice<prices[i]){
+                int profit=prices[i]-buyingPrice; //today's profit
+                maxProfit=Math.max(maxProfit,profit);
+            }
+            else{
+                buyingPrice=prices[i];
+            }
+        
+        }
+        return maxProfit;
+    }
+    public static void main(String args[]){
+        int prices[]={7,1,5,3,6,4};
+        System.out.println(buyAndSellStocks(prices));
+
+    }
+}
+    /*public static int trappedRainWater(int height[]){
         int n=height.length;
         //Calculate leftMax boundary
         int leftMax[]=new int[n];
         leftMax[0]=height[0];
         for(int i=1;i<n;i++){
-            leftMax[i]=Math.max(height[i], leftMax[i-1]);
+            leftMax[i]=Math.max(height[i], leftMax[i-1]);                           
         }
 
         //Calculate rightMax boundary
@@ -30,7 +52,7 @@ public class Arrays{
         int height[]={4,2,0,6,3,2,5};
         System.out.println(trappedRainWater(height));
     }
-}
+}*/
     /*public static void kadanes(int numbers[]){
         int cs=0;
         int ms=Integer.MIN_VALUE;
