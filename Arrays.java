@@ -1,6 +1,56 @@
 import java.util.*;
 public class Arrays{
-    public static int buyAndSellStocks(int prices[]){
+    public int search(int[] nums, int target) {
+        int start=0, end=nums.length-1;
+        while(start<=end){
+            int mid=start+(end-start)/2; //find mid
+
+            if(nums[mid]==target){
+                return mid;
+            }
+
+            //Check which array is sorted
+            if(nums[start]<=nums[mid]){ //left array is sorted
+                  if(target>=nums[start] && target<nums[mid]){
+                    end=mid-1;
+                  }
+                  else{
+                    start=mid+1;
+                  }
+            }
+            else{
+                if(target>nums[mid] && target<=nums[end]){
+                    start=mid+1;
+                }
+                else{
+                    end=mid-1;
+                }
+            }
+        }
+        return -1; //Not found
+        
+    }
+}
+    /*public static boolean containsDuplicate(int arr[]){
+        for(int i=0;i<arr.length-1;i++){
+            for(int j=i+1;j<arr.length;i++){
+                if(arr[i]==arr[j]){
+                    return true;
+                }
+            }
+        }
+        return false;
+
+    }
+
+
+    public static void main(String args[]){
+        int arr[]={1,2,3,1};
+        System.out.println(containsDuplicate(arr));
+
+    }*/
+}
+    /*public static int buyAndSellStocks(int prices[]){
         int buyingPrice=Integer.MAX_VALUE;
         int maxProfit=0;
 
@@ -21,7 +71,7 @@ public class Arrays{
         System.out.println(buyAndSellStocks(prices));
 
     }
-}
+}*/
     /*public static int trappedRainWater(int height[]){
         int n=height.length;
         //Calculate leftMax boundary
