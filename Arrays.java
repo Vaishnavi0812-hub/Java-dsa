@@ -1,5 +1,5 @@
 import java.util.*;
-public class Arrays{
+/*public class Arrays{
     public int search(int[] nums, int target) {
         int start=0, end=nums.length-1;
         while(start<=end){
@@ -30,7 +30,7 @@ public class Arrays{
         return -1; //Not found
         
     }
-}
+}*/
     /*public static boolean containsDuplicate(int arr[]){
         for(int i=0;i<arr.length-1;i++){
             for(int j=i+1;j<arr.length;i++){
@@ -49,7 +49,7 @@ public class Arrays{
         System.out.println(containsDuplicate(arr));
 
     }*/
-}
+
     /*public static int buyAndSellStocks(int prices[]){
         int buyingPrice=Integer.MAX_VALUE;
         int maxProfit=0;
