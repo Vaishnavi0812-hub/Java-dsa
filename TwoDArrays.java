@@ -1,6 +1,30 @@
 import java.util.*;
 public class TwoDArrays {
-    public static boolean staircaseSearch(int matrix [][], int key){
+    public static void main(String args[]){
+        int nums[][]={{1,4,9}, {11,4,3}, {2,2,3}};
+        int sum=0;
+        for(int j=0;j<nums[0].length;j++){ 
+                sum+=nums[1][j];    
+        }
+        System.out.println("Sum is " + sum);
+    }
+}
+    /*public static void main(String args[]){
+        int arr[][]={{4,7,8}, {8,8,7}};
+        int countOf7=0;
+        for(int i=0;i<arr.length;i++){
+            for(int j=0;j<arr[0].length;j++){
+                if(arr[i][j]==7){
+                    countOf7++;
+                }
+            }
+        }
+        System.out.println("Count of 7 is " + countOf7);
+        
+    }*/
+
+    
+    /*public static boolean staircaseSearch(int matrix [][], int key){
         int row=0, col=matrix[0].length-1;
     
         while(row<matrix.length && col>=0){
@@ -17,15 +41,8 @@ public class TwoDArrays {
         }
         System.out.println("Key not found");
         return false;
-    }
-    public static void main(String args[]){
-        int matrix[][]={{10,20,30,40},
-                        {15,25,35,45},
-                        {27,29,37,48},
-                        {32,33,39,50}};
-        int key=33;
-        staircaseSearch(matrix,key);
-    }
+    }*/
+    
     /*public static int diagonalSum(int matrix[][]){
         int sum=0;
         for(int i=0;i<matrix.length;i++){
@@ -118,7 +135,7 @@ public class TwoDArrays {
     }*/
     
     
-}
+
 
     
 
