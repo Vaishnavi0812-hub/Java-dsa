@@ -1,31 +1,33 @@
 import java.util.*;
-public class TwoDArrays {
-    public static void printMatrix(int matrix[][]){
+public class TwoDArrays {}
+    /*blic static void printMatrix(int matrix[][]){
+        int row=2, column=3;
         for(int i=0;i<matrix.length;i++){
             for(int j=0;j<matrix[0].length;j++){
                 System.out.print(matrix[i][j] + " ");
             }
             System.out.println();
-        }       
-    }
-        
-    public static void main(String args[]){
-        int row=2, column=3;
-        int matrix[][]={{2,3,7},{5,6,7}};
-        printMatrix(matrix);
-
+        }
         int [][]transpose=new int[column][row];
-        for(int i=0;i<row;i++){
-            for(int j=0;j<column;j++){
+        for(int i=0;i<matrix.length;i++){
+            for(int j=0;j<matrix[0].length;j++){
                 transpose[j][i]=matrix[i][j];
             }
         }
         System.out.println("The transposed matrix is");
         printMatrix(transpose);
+
+        
+    }
+        
+    public static void main(String args[]){
+        int matrix[][]={{2,3,7},{5,6,7}};
+        printMatrix(matrix);
+        
     }
       
     
-}
+}*/
     /*public static void main(String args[]){
         int nums[][]={{1,4,9}, {11,4,3}, {2,2,3}};
         int sum=0;
