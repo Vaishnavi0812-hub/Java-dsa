@@ -1,6 +1,13 @@
 import java.util.*;
 public class Strings{
-    public static float getShortestPath(String path){
+    public static String substring(String str,int si,int ei){
+        String substr=" ";
+        for(int i=si;i<ei;i++){
+            substr+=str.charAt(i);
+        }
+        return substr;
+    }
+    /*public static float getShortestPath(String path){
         int x=0, y=0;
         for(int i=0;i<path.length();i++){
             char dir=path.charAt(i);
@@ -28,10 +35,13 @@ public class Strings{
         return (float)Math.sqrt(X2+Y2);
 
 
-    }
+    }*/
     public static void main(String args[]){
-        String path="WNEENESENNN";
-        System.out.println(getShortestPath(path));
+        //String path="WNEENESENNN";
+        //System.out.println(getShortestPath(path));
+        String str="Vaishnavi";
+        System.out.println(substring(str, 0, 4));
+        //System.out.println(str.substring(0,5));
     }
 }
     /*public static boolean isPalindrome(String str){
