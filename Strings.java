@@ -1,7 +1,16 @@
 import java.util.*;
 public class Strings{
     public static void main(String args[]){
-        String fruits[]={"apple", "banana", "mango"};
+        
+        /*StringBuilder sb=new StringBuilder("");
+        for(char ch='a';ch<='z';ch++){
+            sb.append(ch);
+        }
+        System.out.println(sb.length());*/
+
+    }
+}
+        /*String fruits[]={"apple", "banana", "mango"};
         String largest=fruits[0];
 
         for(int i=1;i<fruits.length;i++){
@@ -12,9 +21,9 @@ public class Strings{
         }
         System.out.println(largest);
         
-    }
+    }*/
     
-}
+
     /*public static String substring(String str,int si,int ei){
         String substr=" ";
         for(int i=si;i<ei;i++){
