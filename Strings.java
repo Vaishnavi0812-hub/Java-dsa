@@ -1,6 +1,61 @@
 import java.util.*;
 public class Strings{
-    public static String compress(String str){
+    public static void main(String args[]){
+        Scanner sc=new Scanner(System.in);
+
+        System.out.println("Enter your first word : ");
+        String s1=sc.nextLine();
+        s1=s1.toLowerCase();
+
+        System.out.println("Enter your second word :");
+        String s2=sc.nextLine();
+        s2=s2.toLowerCase();
+
+        if(s1.length()==s2.length()){
+            char s1arr[]=s1.toCharArray();
+            char s2arr[]=s2.toCharArray();
+
+            Arrays.sort(s1arr);
+            Arrays.sort(s2arr);
+
+            boolean result=Arrays.equals(s1arr,s2arr);
+            if(result){
+                System.out.println(s1 + " and " + s2 + " are anagrams");
+            }
+            else {
+                System.out.println(s1 + " and " + s2 + " are not anagrams");
+            }
+        }
+        else {
+            System.out.println(s1 + s2 + "are not anagrams");
+        }
+
+        
+    }
+}
+        /*String s1="Vaish";
+        String s2="Vaish";
+        String s3=new String("Vaishu");
+        System.out.println(s1==s2);
+        System.out.println(s3.intern()==s1);*/
+    
+        /*System.out.println("Enter a string");
+        Scanner sc=new Scanner(System.in);
+            String str=sc.nextLine();
+            int count=0;
+            for(int i=0;i<str.length();i++){
+                char ch=str.charAt(i);
+                if(ch=='a' || ch=='e' || ch=='i'|| ch=='o'|| ch=='u'){
+                    count++;
+                }
+            }
+            System.out.println("count of vowels is " + count);
+        
+        
+    }*/
+
+
+    /*public static String compress(String str){
         StringBuilder sb=new StringBuilder("");
 
         for(int i=0;i<str.length();i++){
@@ -22,8 +77,8 @@ public class Strings{
         String str="aaabbcccdd";
         System.out.println(compress(str));
 
-    }
-}
+    }*/
+
     /*public static String toUpperCase(String str){
         StringBuilder sb=new StringBuilder("");
 
