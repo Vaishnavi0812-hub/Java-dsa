@@ -1,12 +1,27 @@
 import java.util.*;
 public class Strings{
-    public static String substring(String str,int si,int ei){
+    public static void main(String args[]){
+        String fruits[]={"apple", "banana", "mango"};
+        String largest=fruits[0];
+
+        for(int i=1;i<fruits.length;i++){
+             if(largest.compareTo(fruits[i])<0){
+                largest=fruits[i];
+
+             }
+        }
+        System.out.println(largest);
+        
+    }
+    
+}
+    /*public static String substring(String str,int si,int ei){
         String substr=" ";
         for(int i=si;i<ei;i++){
             substr+=str.charAt(i);
         }
         return substr;
-    }
+    }*/
     /*public static float getShortestPath(String path){
         int x=0, y=0;
         for(int i=0;i<path.length();i++){
@@ -36,14 +51,14 @@ public class Strings{
 
 
     }*/
-    public static void main(String args[]){
+   // public static void main(String args[]){
         //String path="WNEENESENNN";
         //System.out.println(getShortestPath(path));
-        String str="Vaishnavi";
-        System.out.println(substring(str, 0, 4));
+        //String str="Vaishnavi";
+        //System.out.println(substring(str, 0, 4));
         //System.out.println(str.substring(0,5));
-    }
-}
+    //}
+//}
     /*public static boolean isPalindrome(String str){
         for(int i=0;i<str.length()/2;i++){
             int n=str.length();
