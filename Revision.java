@@ -63,7 +63,7 @@ public class Revision {
         }
         return sum;
     }*/
-    public static boolean isPalindrome(int n){
+    /*public static boolean isPalindrome(int n){
         int palindrome=n;
         int reverse=0;
         while(palindrome>0){
@@ -76,16 +76,16 @@ public class Revision {
         }else{
             return false;
         }
-    }
+    }*/
     public static void main(String args[]){
-        Scanner sc=new Scanner(System.in);
+        /*Scanner sc=new Scanner(System.in);
         System.out.println("Enter your number");
         int n=sc.nextInt();
         if(isPalindrome(n)){
             System.out.println("The number " + n + " is a palindrome");
         }else{
             System.out.println("The number" + n + " is not a palindrome");
-        }
+        }*/
 
         //System.out.println(average(3.5, 4.5, 9));
         /*Scanner sc=new Scanner(System.in);
