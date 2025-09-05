@@ -54,7 +54,7 @@ public class Revision {
     /*public static double average(double a,double b,double c){
         return (a+b+c)/3;
     }*/
-    public static int sumOfDigits(int a){
+    /*public static int sumOfDigits(int a){
         int sum=0;
         while(a>0){
             int lastDigit=a%10;
@@ -62,15 +62,36 @@ public class Revision {
             a=a/10;
         }
         return sum;
+    }*/
+    public static boolean isPalindrome(int n){
+        int palindrome=n;
+        int reverse=0;
+        while(palindrome>0){
+            int lastDigit=palindrome%10;
+            reverse=reverse*10+lastDigit;
+            palindrome=palindrome/10;
+        }
+        if(n==reverse){
+            return true;
+        }else{
+            return false;
+        }
     }
-
-
     public static void main(String args[]){
-        //System.out.println(average(3.5, 4.5, 9));
         Scanner sc=new Scanner(System.in);
         System.out.println("Enter your number");
+        int n=sc.nextInt();
+        if(isPalindrome(n)){
+            System.out.println("The number " + n + " is a palindrome");
+        }else{
+            System.out.println("The number" + n + " is not a palindrome");
+        }
+
+        //System.out.println(average(3.5, 4.5, 9));
+        /*Scanner sc=new Scanner(System.in);
+        System.out.println("Enter your number");
         int a=sc.nextInt();
-        System.out.println(sumOfDigits(a));
+        System.out.println(sumOfDigits(a));*/
        
          
     }
