@@ -1,6 +1,4 @@
 import java.util.*;
-
-import javax.sound.midi.SysexMessage;
 public class Revision {
     /*public static int prodOfNumbers(int a, int b){
         int product=a*b;
@@ -109,7 +107,7 @@ public class Revision {
             System.out.println();
         }
     }*/
-    public static void butterfly(int n){
+    /*public static void butterfly(int n){
         for(int i=1;i<=n;i++){
             //stars
             for(int j=1;j<=i;j++){
@@ -140,12 +138,53 @@ public class Revision {
             }
             System.out.println();
         }
+    }*/ 
+    /*public static void rhombus(int n){
+        for(int i=1;i<=n;i++){
+            //spaces
+            for(int s=1;s<=(n-i);s++){
+                System.out.print(" ");
+            }
+            //hollow  rect
+            for(int j=1;j<=n;j++){
+                if(i==1||i==n||j==1||j==n){
+                    System.out.print("*");
+                }else{
+                    System.out.print(" ");
+                }
+            }
+            System.out.println();
+        }
+    }*/
+    public static void diamond(int n){
+        for(int i=1;i<=n;i++){
+            //space
+            for(int s=1;s<=(n-i);s++){
+                System.out.print(" ");
+            }
+            //stars
+            for(int j=1;j<=(2*i)-1;j++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+        for(int i=n;i>=1;i--){
+            //space
+            for(int s=1;s<=(n-i);s++){
+                System.out.print(" ");
+            }
+            //stars
+            for(int j=1;j<=(2*i)-1;j++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
     }
     
     public static void main(String args[]){
-        butterfly(5);
-        //zeroOneTri(5);
-
+        diamond(5);
+        //rhombus(5);
+        //butterfly(5);
 
         //halfPyramid(4);
         //invertedPyramid(4);
