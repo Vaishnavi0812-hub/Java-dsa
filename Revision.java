@@ -109,20 +109,43 @@ public class Revision {
             System.out.println();
         }
     }*/
-    public static void zeroOneTri(int n){
+    public static void butterfly(int n){
         for(int i=1;i<=n;i++){
+            //stars
             for(int j=1;j<=i;j++){
-                if((i+j)%2==0){
-                    System.out.print("1");
-                }else{
-                    System.out.print("0");
-                }
+                System.out.print("*");
+            }
+            //space
+            for(int s=1;s<=2*(n-i);s++){
+                System.out.print(" ");
+            }
+            //stars
+            for(int j=1;j<=i;j++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+        for(int i=n;i>=1;i--){
+            //stars
+            for(int j=1;j<=i;j++){
+                System.out.print("*");
+            }
+            //space
+            for(int s=1;s<=2*(n-i);s++){
+                System.out.print(" ");
+            }
+            //stars
+            for(int j=1;j<=i;j++){
+                System.out.print("*");
             }
             System.out.println();
         }
     }
+    
     public static void main(String args[]){
-        zeroOneTri(5);
+        butterfly(5);
+        //zeroOneTri(5);
+
 
         //halfPyramid(4);
         //invertedPyramid(4);
