@@ -1,4 +1,6 @@
 import java.util.*;
+
+import javax.sound.midi.SysexMessage;
 public class Revision {
     /*public static int prodOfNumbers(int a, int b){
         int product=a*b;
@@ -77,7 +79,40 @@ public class Revision {
             return false;
         }
     }*/
+    //public static void hollowRect(int totRows, int totCols){
+        /*for(int i=1;i<=totRows;i++){
+            for(int j=1;j<=totCols;j++){
+                if(i==1||i==totRows||j==1||j==totCols){
+                    System.out.print("*");
+                }else{
+                    System.out.print(" ");
+                }
+            }
+            System.out.println();
+        }*/
+    /*public static void invertedPyramid(int n){
+        for(int i=1;i<=n;i++){
+            for(int s=1;s<=n-i;s++){
+                System.out.print(" ");
+            }
+            for(int j=1;j<=i;j++){ 
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }*/
+    public static void halfPyramid(int n){
+        for(int i=1;i<=n;i++){
+            for(int j=1;j<=n-i+1;j++){
+                System.out.print(j);
+            }
+            System.out.println();
+        }
+    }
     public static void main(String args[]){
+        halfPyramid(4);
+        //invertedPyramid(4);
+        //hollowRect(4,5);
         /*Scanner sc=new Scanner(System.in);
         System.out.println("Enter your number");
         int n=sc.nextInt();
