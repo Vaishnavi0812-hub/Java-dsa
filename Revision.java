@@ -101,16 +101,30 @@ public class Revision {
             System.out.println();
         }
     }*/
-    public static void halfPyramid(int n){
+    /*public static void halfPyramid(int n){
         for(int i=1;i<=n;i++){
             for(int j=1;j<=n-i+1;j++){
                 System.out.print(j);
             }
             System.out.println();
         }
+    }*/
+    public static void zeroOneTri(int n){
+        for(int i=1;i<=n;i++){
+            for(int j=1;j<=i;j++){
+                if((i+j)%2==0){
+                    System.out.print("1");
+                }else{
+                    System.out.print("0");
+                }
+            }
+            System.out.println();
+        }
     }
     public static void main(String args[]){
-        halfPyramid(4);
+        zeroOneTri(5);
+
+        //halfPyramid(4);
         //invertedPyramid(4);
         //hollowRect(4,5);
         /*Scanner sc=new Scanner(System.in);
