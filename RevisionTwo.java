@@ -36,10 +36,57 @@ public class RevisionTwo {
         }
         return -1;
     }*/
+    /*public static void reverseArray(int numbers[]){
+        int start=0, end=numbers.length-1;
+        while(start<=end){
+            int temp=numbers[end];
+            numbers[end]=numbers[start];
+            numbers[start]=temp;
+            start++;
+            end--;
+        }
+    }*/
+    /*public static void subArr(int arr[]){
+        int tp=0;
+        for(int i=0;i<arr.length;i++){
+            int curr=arr[i];
+            for(int j=i+1;j<arr.length;j++){
+                System.out.print("(" + curr + " , " + arr[j] + " )");
+                tp++;
+            }
+            System.out.println();
+        }
+        System.out.println("Total no of pairs is " + tp);
+    }*/
+    public static void printSubArr(int arr[]){
+        int tp=0;
+        for(int i=0;i<arr.length;i++){
+            int sum=0;
+            for(int j=i;j<arr.length;j++){
+                sum+=arr[j];
+                for(int k=i;k<=j;k++){
+                    System.out.print(arr[k] + " ");
+                }
+                System.out.println(" Sum is " + sum);
+                tp++;
+                System.out.println();                
+            }
+            System.out.println();
+        }
+        System.out.println("Total no of subarrays are " + tp);
+                                    
+    }
+
     public static void main (String args[]){
-        int numbers[]={2,4,6,8,10,12,14};
-        int key=10;
-        System.out.println("Index of key is  " + binarySearch(numbers,key));
+        int arr[]={2,4,6,8,10};
+        printSubArr(arr);
+
+        /*int numbers[]={2,4,6,8,10,12,14};
+        reverseArray(numbers);
+        for(int i=0;i<numbers.length;i++){
+            System.out.print(numbers[i] + " ");
+        }
+        System.out.println();*/
 
         /*int numbers[]={2,4,6,8,10,12};
         int key=10;
