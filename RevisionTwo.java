@@ -76,7 +76,7 @@ public class RevisionTwo {
         System.out.println("Total no of subarrays are " + tp);
                                     
     }*/
-    public static void maxSubarraySum(int arr[]){
+    /*public static void maxSubarraySum(int arr[]){
         int currSum=0;
         int maxSum=Integer.MIN_VALUE;
         //create a prefix array
@@ -97,10 +97,22 @@ public class RevisionTwo {
             }
         }
         System.out.println("max sum is " + maxSum);
+    }*/
+    public static void maxSubarraySum(int arr[]){
+        int cs=0;
+        int ms=Integer.MIN_VALUE;
+        for(int i=0;i<arr.length;i++){
+            cs+=arr[i];
+            if(cs<0){
+                cs=0;
+            }
+            ms=Math.max(cs,ms);
+        }
+        System.out.println("Max subarray sum is " + ms);
     }
 
     public static void main (String args[]){
-        int arr[]={1,-2,6,-1,3};
+        int arr[]={-2,-3,4,-1,-2,1,5,-3};
         maxSubarraySum(arr);
         /*int arr[]={2,4,6,8,10};
         printSubArr(arr);*/
