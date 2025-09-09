@@ -98,7 +98,7 @@ public class RevisionTwo {
         }
         System.out.println("max sum is " + maxSum);
     }*/
-    public static void maxSubarraySum(int arr[]){
+    /*public static void maxSubarraySum(int arr[]){
         int cs=0;
         int ms=Integer.MIN_VALUE;
         for(int i=0;i<arr.length;i++){
@@ -109,11 +109,30 @@ public class RevisionTwo {
             ms=Math.max(cs,ms);
         }
         System.out.println("Max subarray sum is " + ms);
+    }*/
+    /*public static boolean containsDuplicate(int arr[]){
+        for(int i=0;i<arr.length;i++){
+            for(int j=i+1;j<arr.length;j++){
+                if(arr[i]==arr[j]){
+                    return true;
+                }
+            }
+        }
+        return false;
+    }*/
+    public static int rotatedArray(int arr[], int target){
+        for(int i=0;i<arr.length;i++){
+            if(arr[i]==target){
+                return i;
+            }
+        }
+        return -1;
     }
 
-    public static void main (String args[]){
-        int arr[]={-2,-3,4,-1,-2,1,5,-3};
-        maxSubarraySum(arr);
+     public static void main (String args[]){
+        int arr[]={4,5,6,7,0,1,2};
+        int target=4;
+        System.out.println(rotatedArray(arr,target));    
         /*int arr[]={2,4,6,8,10};
         printSubArr(arr);*/
 
