@@ -198,7 +198,8 @@ public class RevisionTwo {
 
     }*/
      public static void main (String args[]){
-        int matrix[][]={{2,3,7} , {5,6,7}};
+        
+        /*int matrix[][]={{2,3,7} , {5,6,7}};
         int row=2, col=3;
         for(int i=0;i<matrix.length;i++){
             for(int j=0;j<matrix[0].length;j++){
@@ -213,7 +214,7 @@ public class RevisionTwo {
                 System.out.print(transpose[j][i] + " ");
             }
             System.out.println();
-        }
+        }*/
         /*int matrix[][]=new int[3][3];
         int n=matrix.length;
         int m=matrix[0].length;
