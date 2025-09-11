@@ -197,16 +197,45 @@ public class RevisionTwo {
             return false;
 
     }*/
-    public static void printMatrix(int matrix[][]){
+    /*public static void printMatrix(int matrix[][]){
         for(int i=0;i<matrix.length;i++){
             for(int j=0;j<matrix[0].length;j++){
                 System.out.print(matrix[i][j] + " ");
             }
             System.out.println();
         }
-    }
+    }*//*public static float getShortestPath(String path){
+        int x=0,y=0;
+        for(int i=0;i<path.length();i++){
+            char dir=path.charAt(i);
+            //North
+            if(dir=='N'){
+                y++;
+            }
+            //South
+            if(dir=='S'){
+                y--;
+            }
+            //East
+            if(dir=='E'){
+                x++;
+            }
+            //West
+            if(dir=='W'){
+                x--;
+            }
+        }
+        int X2=x*x;
+        int Y2=y*y;
+        return (float)Math.sqrt(X2+Y2);
+
+    }*/
      public static void main (String args[]){
-        int row=2, col=3;
+        
+        /*String path="WNEENESENNN";
+        System.out.println(getShortestPath(path));*/
+
+        /*int row=2, col=3;
         int matrix[][]={{1,2,3}, {4,5,6}};
         printMatrix(matrix);
 
@@ -216,7 +245,7 @@ public class RevisionTwo {
                 transpose[j][i]=matrix[i][j];
             }
         }
-        printMatrix(transpose);
+        printMatrix(transpose);*/
 
         /*int matrix[][]={{2,3,7} , {5,6,7}};
         int row=2, col=3;
