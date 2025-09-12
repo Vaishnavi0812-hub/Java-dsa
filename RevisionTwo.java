@@ -230,7 +230,7 @@ public class RevisionTwo {
         return (float)Math.sqrt(X2+Y2);
 
     }*/
-    public static String toUpperCase(String str){
+    /*public static String toUpperCase(String str){
         StringBuilder sb=new StringBuilder(" ");
         char ch=Character.toUpperCase(str.charAt(0));
         sb.append(ch);
@@ -245,10 +245,20 @@ public class RevisionTwo {
             }
         }
         return sb.toString();
+    }*/
+    public static void oddOrEven(int n){
+        int bitMask=1;
+        if((n&bitMask)==0){
+            System.out.println("even");
+        }else{
+            System.out.println("Odd");
+        }
     }
      public static void main (String args[]){
-        String str="hi i am vaishnavi";
-        System.out.println(toUpperCase(str));
+        oddOrEven(3);
+
+        /*String str="hi i am vaishnavi";
+        System.out.println(toUpperCase(str));*/
         /*String fruits[]={"apple", "mango", "banana"};
         String largest=fruits[0];
         for(int i=1;i<fruits.length;i++){
