@@ -246,16 +246,21 @@ public class RevisionTwo {
         }
         return sb.toString();
     }*/
-    public static void oddOrEven(int n){
+    /*public static void oddOrEven(int n){
         int bitMask=1;
         if((n&bitMask)==0){
             System.out.println("even");
         }else{
             System.out.println("Odd");
         }
+    }*/
+    public static int setIthBit(int n, int i){
+        int bitMask=1<<i;
+        return n|bitMask;
     }
      public static void main (String args[]){
-        oddOrEven(3);
+        System.out.println(setIthBit(10, 2));
+       
 
         /*String str="hi i am vaishnavi";
         System.out.println(toUpperCase(str));*/
