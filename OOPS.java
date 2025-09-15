@@ -3,11 +3,11 @@ public class OOPS {
         //Dog coco=new Dog();
         //coco.eat();
     }
-    public static void main(String args[]){
+    /*public static void main(String args[]){
     Fish tuna=new Fish();
     tuna.eat();
 
-}
+}*/
     /*public static void main(String args[]){
         Pen p1=new Pen();
 
