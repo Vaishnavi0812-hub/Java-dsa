@@ -1,7 +1,7 @@
 public class OOPS {
     public static void main(String[] args) {
-        Dog coco=new Dog();
-        coco.eat();
+        //Dog coco=new Dog();
+        //coco.eat();
     }
     /*public static void main(String args[]){
     Fish tuna=new Fish();
@@ -14,7 +14,7 @@ public class OOPS {
     }*/
     
 }
-class Animal{
+/*class Animal{
     String color;
     void eat(){
         System.out.println("eats");
@@ -40,7 +40,7 @@ class Dog extends Mammal{
     void jumps(){
         System.out.println("Jumps");
     }
-}
+}*/
 /*class Pen{
     //prop + func
     String color;
