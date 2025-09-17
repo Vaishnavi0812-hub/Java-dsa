@@ -24,19 +24,31 @@ public class RecursionBasics {
         int factn=n*fnm1;
         return factn;
     }*/
-    public static int sumofNumbers(int n){
+    /*public static int sumofNumbers(int n){
         if(n==1){
             return 1;
         }
         int snm1=sumofNumbers(n-1);
         int totSum=n+snm1;
         return totSum;
-    }
+    }*/
+    public static int fibonacci(int n){
+        if(n==0 || n==1){
+            return n;
+        }
+        
+        int fnm1=fibonacci(n-1);
+        int fnm2=fibonacci(n-2);
+        int fibo=fnm1+fnm2;
+        return fibo;
 
+    }
     public static void main(String args[]){
         int n=5;
-        System.out.println(sumofNumbers(n));
+        System.out.println(fibonacci(n));
 
+        //int n=5;
+        //System.out.println(sumofNumbers(n));
         //System.out.println(fact(5));
         //printDecreasing(8);
         //printIncreasing(8);
