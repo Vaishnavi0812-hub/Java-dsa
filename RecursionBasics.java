@@ -32,7 +32,7 @@ public class RecursionBasics {
         int totSum=n+snm1;
         return totSum;
     }*/
-    public static int fibonacci(int n){
+    /*public static int fibonacci(int n){
         if(n==0 || n==1){
             return n;
         }
@@ -42,10 +42,23 @@ public class RecursionBasics {
         int fibo=fnm1+fnm2;
         return fibo;
 
+    }*/
+    public static boolean isSorted(int arr[],int i){
+        if(i==arr.length-1){
+            return true;
+        }
+
+        if(arr[i]>arr[i+1]){
+            return false;
+        }
+         return isSorted(arr, i+1);
+
     }
     public static void main(String args[]){
-        int n=5;
-        System.out.println(fibonacci(n));
+        int arr[]={1,2,3,4,5};
+        System.out.println(isSorted(arr, 0));
+        //int n=5;
+        //System.out.println(fibonacci(n));
 
         //int n=5;
         //System.out.println(sumofNumbers(n));
