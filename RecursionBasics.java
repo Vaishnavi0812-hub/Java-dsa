@@ -43,7 +43,7 @@ public class RecursionBasics {
         return fibo;
 
     }*/
-    public static boolean isSorted(int arr[],int i){
+    /*public static boolean isSorted(int arr[],int i){
         if(i==arr.length-1){
             return true;
         }
@@ -53,10 +53,33 @@ public class RecursionBasics {
         }
          return isSorted(arr, i+1);
 
+    }*/
+    /*public static int firstOcc(int arr[],int key,int i){
+        if(i==arr.length-1){
+            return -1;
+        }
+        if(key==arr[i]){
+            return i;
+        }
+        return firstOcc(arr,key,i+1);
+    }*/
+
+    public static int lastOcc(int arr[],int key, int i){
+        if(i==arr.length){
+            return -1;
+        }
+        int isFound=lastOcc(arr, key, i+1);
+        if(isFound== -1 && arr[i]==key){
+            return i;
+        }
+        return isFound;
+
     }
     public static void main(String args[]){
-        int arr[]={1,2,3,4,5};
-        System.out.println(isSorted(arr, 0));
+        int arr[]={8,3,6,9,5,10,2,5,3};
+        int key=5;
+        System.out.println(lastOcc(arr, 5, 0));
+        //System.out.println(isSorted(arr, 0));
         //int n=5;
         //System.out.println(fibonacci(n));
 
