@@ -64,7 +64,7 @@ public class RecursionBasics {
         return firstOcc(arr,key,i+1);
     }*/
 
-    public static int lastOcc(int arr[],int key, int i){
+    /*public static int lastOcc(int arr[],int key, int i){
         if(i==arr.length){
             return -1;
         }
@@ -74,11 +74,33 @@ public class RecursionBasics {
         }
         return isFound;
 
+    }*/
+    /*public static int power(int x, int n){
+        if(n==0){
+            return 1;
+        }
+        //int xnm1=power(x,n-1);
+        //int xn=x*xnm1;
+        //return xn;
+        return x*power(x,n-1);
+
+    }*/
+    public static int optPower(int x, int n){
+        if(n==0){
+            return 1;
+        }
+        int xtn=optPower(x, n/2);
+        int xn=xtn*xtn;
+        if(n%2!=0){
+            xn=x*xn;
+        }
+        return xn;
     }
     public static void main(String args[]){
-        int arr[]={8,3,6,9,5,10,2,5,3};
+        System.out.println(optPower(2, 5));
+        /*int arr[]={8,3,6,9,5,10,2,5,3};
         int key=5;
-        System.out.println(lastOcc(arr, 5, 0));
+        System.out.println(lastOcc(arr, 5, 0));*/
         //System.out.println(isSorted(arr, 0));
         //int n=5;
         //System.out.println(fibonacci(n));
