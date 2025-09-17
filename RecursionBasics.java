@@ -1,5 +1,5 @@
 public class RecursionBasics {
-    public static void printDecreasing(int n){
+    /*public static void printDecreasing(int n){
         if(n==1){
             System.out.print(n);
             return;
@@ -21,13 +21,23 @@ public class RecursionBasics {
         }
         
         int fnm1=fact(n-1);
-        int factn=n*fact(n-1);
+        int factn=n*fnm1;
         return factn;
+    }*/
+    public static int sumofNumbers(int n){
+        if(n==1){
+            return 1;
+        }
+        int snm1=sumofNumbers(n-1);
+        int totSum=n+snm1;
+        return totSum;
     }
 
     public static void main(String args[]){
-        System.out.println(fact(5));
+        int n=5;
+        System.out.println(sumofNumbers(n));
 
+        //System.out.println(fact(5));
         //printDecreasing(8);
         //printIncreasing(8);
 
