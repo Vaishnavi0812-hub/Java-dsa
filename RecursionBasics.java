@@ -1,3 +1,4 @@
+import java.util.HashSet;
 public class RecursionBasics {
     /*public static void printDecreasing(int n){
         if(n==1){
@@ -96,7 +97,7 @@ public class RecursionBasics {
         }
         return xn;
     }*/
-    public static int tiling(int n){
+    /*public static int tiling(int n){
         if(n==0||n==1){
             return 1;
         }
@@ -105,9 +106,24 @@ public class RecursionBasics {
         int totWays=fnm1+fnm2;
         return totWays;
 
+    }*/
+    public static String removeDuplicates(String str){
+
+        HashSet<Character> seen=new HashSet<>();
+        StringBuilder sb=new StringBuilder();
+        for(int i=0;i<str.length();i++){
+            char c=str.charAt(i);
+            if(!seen.contains(c)){
+                seen.add(c);
+                sb.append(c);
+            } 
+        }
+        return sb.toString();
     }
     public static void main(String args[]){
-        System.out.println(tiling(3));
+        String str="ap/pnn@acoll-ege";
+        System.out.println(removeDuplicates(str));
+        //System.out.println(tiling(3));
         //System.out.println(optPower(2, 5));
         /*int arr[]={8,3,6,9,5,10,2,5,3};
         int key=5;
