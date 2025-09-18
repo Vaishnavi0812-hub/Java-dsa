@@ -85,19 +85,30 @@ public class RecursionBasics {
         return x*power(x,n-1);
 
     }*/
-    public static int optPower(int x, int n){
+    /*public static int optPower(int x, int n){
         if(n==0){
             return 1;
         }
         int xtn=optPower(x, n/2);
-        int xn=xtn*xtn;
+        int xn=xtn*xtn;     
         if(n%2!=0){
             xn=x*xn;
         }
         return xn;
+    }*/
+    public static int tiling(int n){
+        if(n==0||n==1){
+            return 1;
+        }
+        int fnm1=tiling(n-1);
+        int fnm2=tiling(n-2);
+        int totWays=fnm1+fnm2;
+        return totWays;
+
     }
     public static void main(String args[]){
-        System.out.println(optPower(2, 5));
+        System.out.println(tiling(3));
+        //System.out.println(optPower(2, 5));
         /*int arr[]={8,3,6,9,5,10,2,5,3};
         int key=5;
         System.out.println(lastOcc(arr, 5, 0));*/
