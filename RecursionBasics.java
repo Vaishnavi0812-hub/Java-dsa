@@ -107,7 +107,7 @@ public class RecursionBasics {
         return totWays;
 
     }*/
-    public static String removeDuplicates(String str){
+    /*public static String removeDuplicates(String str){
 
         HashSet<Character> seen=new HashSet<>();
         StringBuilder sb=new StringBuilder();
@@ -119,10 +119,25 @@ public class RecursionBasics {
             } 
         }
         return sb.toString();
+    }*/
+    public static void removeDuplicates(String str, int idx, StringBuilder sb, boolean map[]){
+        if(idx==str.length()){
+            System.out.println(sb);
+            return;
+        }
+        char currChar=str.charAt(idx);
+        if(map[currChar-'a']==true){
+            removeDuplicates(str, idx+1, sb, map);
+        }
+        else{
+            map[currChar-'a']=true;
+            removeDuplicates(str, idx+1, sb.append(currChar), map);
+        }
+
     }
     public static void main(String args[]){
-        String str="ap/pnn@acoll-ege";
-        System.out.println(removeDuplicates(str));
+        String str="appnnacollege";
+        removeDuplicates(str, 0, new StringBuilder(""), new boolean[26]);
         //System.out.println(tiling(3));
         //System.out.println(optPower(2, 5));
         /*int arr[]={8,3,6,9,5,10,2,5,3};
