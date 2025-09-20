@@ -120,7 +120,7 @@ public class RecursionBasics {
         }
         return sb.toString();
     }*/
-    public static void removeDuplicates(String str, int idx, StringBuilder sb, boolean map[]){
+    /*public static void removeDuplicates(String str, int idx, StringBuilder sb, boolean map[]){
         if(idx==str.length()){
             System.out.println(sb);
             return;
@@ -134,16 +134,29 @@ public class RecursionBasics {
             removeDuplicates(str, idx+1, sb.append(currChar), map);
         }
 
+    }*/
+    public static int friendsPair(int n){
+        if(n==1||n==2){
+            return n;
+        }
+        //single
+        int single=friendsPair(n-1);
+        int pair=friendsPair(n-2);
+        int pairWays=(n-1)*pair;
+        int totWays=single+pairWays;
+
+        return totWays;
     }
     public static void main(String args[]){
-        String str="appnnacollege";
-        removeDuplicates(str, 0, new StringBuilder(""), new boolean[26]);
+        System.out.println(friendsPair(3));
+        //String str="appnnacollege";
+        //removeDuplicates(str, 0, new StringBuilder(""), new boolean[26]);
         //System.out.println(tiling(3));
         //System.out.println(optPower(2, 5));
         /*int arr[]={8,3,6,9,5,10,2,5,3};
         int key=5;
         System.out.println(lastOcc(arr, 5, 0));*/
-        //System.out.println(isSorted(arr, 0));
+        //System.out.println(isSorted(arr, 0));                                            
         //int n=5;
         //System.out.println(fibonacci(n));
 
