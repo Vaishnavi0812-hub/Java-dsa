@@ -135,7 +135,7 @@ public class RecursionBasics {
         }
 
     }*/
-    public static int friendsPair(int n){
+    /*public static int friendsPair(int n){
         if(n==1||n==2){
             return n;
         }
@@ -146,9 +146,14 @@ public class RecursionBasics {
         int totWays=single+pairWays;
 
         return totWays;
+    }*/
+    public static void binaryStrings(int n, int lastPlace, StringBuilder str){
+        if(lastPlace==0){
+            binaryStrings(n-1, 0, str.append);
+        }
     }
     public static void main(String args[]){
-        System.out.println(friendsPair(3));
+        //System.out.println(friendsPair(3));
         //String str="appnnacollege";
         //removeDuplicates(str, 0, new StringBuilder(""), new boolean[26]);
         //System.out.println(tiling(3));
