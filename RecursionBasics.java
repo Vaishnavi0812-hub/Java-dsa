@@ -147,7 +147,7 @@ public class RecursionBasics {
 
         return totWays;
     }*/
-    public static void binaryStrings(int n, int lastPlace, String str){
+    /*public static void binaryStrings(int n, int lastPlace, String str){
         if(n==0){
             System.out.println(str);
             return;
@@ -159,9 +159,51 @@ public class RecursionBasics {
             binaryStrings(n-1, 0, str+"0");
 
         }
+    }*/
+    /*public static void keyOccurence(int arr[], int key, int idx){
+        if(idx==arr.length){
+            return;
+        } 
+        if(arr[idx]==key){
+            System.out.print(idx + " ");
+        }
+        keyOccurence(arr, key, idx+1);
+
+
+    }*/
+    /*static String digits[]={"zero","one","two","three","four","five","six","seven","eight","nine"};
+
+    public static void printDigits(int num){
+        if(num==0){
+            return;
+        }
+        int lastDigit=num%10;
+        printDigits(num/10);
+        System.out.print(digits[lastDigit] + " ");
+    }*/
+    /*public static int lengthOfString(String str){
+        if(str.length()==0){
+            return 0;
+        }
+        return lengthOfString(str.substring(1)) +1;
+    }*/
+    public static void towerOfHanoi(int n, String src, String helper, String dest){
+        if(n==1){
+            System.out.println("Transfer disk " + n + " from " + src + " to " + dest);
+            return;
+        }
+        towerOfHanoi(n-1, src, dest, helper);
+        System.out.println("Trasnfer disk " + n + " from " + src + " to " + dest);
+        towerOfHanoi(n-1, helper, src, dest);
     }
+
     public static void main(String args[]){
-        binaryStrings(3, 0, "");
+        int n=3;
+        towerOfHanoi(n,"A","B","C");
+        //String str="aba";
+        //System.out.println(lengthOfString(str));
+        //printDigits(1234);
+        //binaryStrings(3, 0, "");
         //System.out.println(friendsPair(3));
         //String str="appnnacollege";
         //removeDuplicates(str, 0, new StringBuilder(""), new boolean[26]);
