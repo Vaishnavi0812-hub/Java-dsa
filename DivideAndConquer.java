@@ -36,7 +36,7 @@ public class DivideAndConquer {
             arr[i]=temp[k];
         }
     }*/
-    public static void quickSort(int arr[], int si,int ei){
+    /*public static void quickSort(int arr[], int si,int ei){
         if(si>=ei){
             return;
         }
@@ -62,13 +62,13 @@ public class DivideAndConquer {
         arr[i]=temp;
         return i;
 
-    }
+    }*/
     public static void main(String args[]){
-        int arr[]={6,3,9,5,2,8};
+        /*int arr[]={6,3,9,5,2,8};
         quickSort(arr,0,arr.length-1);
         for(int i=0;i<arr.length;i++){
             System.out.print(arr[i] + " ");
-        }
+        }*/
 
        
     }
