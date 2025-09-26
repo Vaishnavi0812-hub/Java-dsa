@@ -144,7 +144,7 @@ public class DivideAndConquer {
         }
         return invCount;
     }*/
-    public static int merge(int arr[], int left,int mid, int right){
+    /*public static int merge(int arr[], int left,int mid, int right){
         int invCount=0;
         int i=left, j=mid+1, k=0;
         int temp[]=new int[right-left+1];
@@ -181,12 +181,12 @@ public class DivideAndConquer {
             invCount+=merge(arr,left,mid,right);
         }
         return invCount;
-    }
+    }*/
 
 
     public static void main(String[] args) {
-        int arr[]={1,20,6,4,5};
-        System.out.println(mergeSort(arr,0,arr.length-1));
+        //int arr[]={1,20,6,4,5};
+        //System.out.println(mergeSort(arr,0,arr.length-1));
         
         /*String[] arr = { "sun", "earth", "mars", "mercury" };
         // handle empty array safely
