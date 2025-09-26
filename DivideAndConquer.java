@@ -66,7 +66,7 @@ public class DivideAndConquer {
    
 
     // Merge sort: sorts subarray arr[lo..hi] and returns a NEW sorted array
-    public static String[] mergeSort(String[] arr, int lo, int hi) {
+    /*public static String[] mergeSort(String[] arr, int lo, int hi) {
         // base case: subarray of length 1
         if (lo == hi) {
             String[] A = { arr[lo] };
@@ -130,11 +130,24 @@ public class DivideAndConquer {
             return true;
         }
         return false;
-    }
+    }*/
 
     // driver
+    public static int getInvCount(int arr[]){
+        int invCount=0;
+        for(int i=0;i<arr.length;i++){
+            for(int j=i+1;j<arr.length;j++){
+                if(arr[i]>arr[j]){
+                    invCount++;
+                }
+            }
+        }
+        return invCount;
+    }
     public static void main(String[] args) {
-        String[] arr = { "sun", "earth", "mars", "mercury" };
+        int arr[]={1,20,6,4,5};
+        System.out.println("Inversion count is " + getInvCount(arr));
+        /*String[] arr = { "sun", "earth", "mars", "mercury" };
         // handle empty array safely
         if (arr.length == 0) {
             System.out.println("Empty array");
@@ -143,7 +156,7 @@ public class DivideAndConquer {
         String[] a = mergeSort(arr, 0, arr.length - 1);
         for (int i = 0; i < a.length; i++) {
             System.out.println(a[i]);
-        }
+        }*/
     }
 
 
