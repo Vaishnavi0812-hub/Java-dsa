@@ -78,18 +78,21 @@ public class Backtracking {
         return true;
 
     }
-    public static void nQueens(char board[][], int row){
+    public static boolean nQueens(char board[][], int row){
         if(row==board.length){
             count++;
-            return;
+            return true;
         }
         for(int j=0;j<board.length;j++){
             if(isSafe(board, row, j)){
                 board[row][j]='Q';
-                nQueens(board, row+1);
+                if(nQueens(board, row+1)){
+                    return true;
+                }
                 board[row][j]='x';
             }
         }
+        return false;
     }
     public static void printBoard(char board[][]){
         System.out.println("-----chess board------");
@@ -103,15 +106,20 @@ public class Backtracking {
     }
     static int count=0;
     public static void main(String args[]){
-        int n=2;
+        int n=4;
         char board[][]=new char[n][n];
         for(int i=0;i<n;i++){
             for(int j=0;j<n;j++){
                 board[i][j]='x';
             }
         }
-        nQueens(board,0);
-        System.out.println("Total no of ways is " + count);
+        if(nQueens(board,0)){
+            System.out.println("Solution is possible");
+            printBoard(board);
+        }else{
+            System.out.println("Solution is not possible");
+        }
+        //System.out.println("Total no of ways is " + count);
     }
 
     
