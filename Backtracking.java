@@ -80,7 +80,7 @@ public class Backtracking {
     }
     public static void nQueens(char board[][], int row){
         if(row==board.length){
-            printBoard(board);
+            count++;
             return;
         }
         for(int j=0;j<board.length;j++){
@@ -101,8 +101,9 @@ public class Backtracking {
         }
        
     }
+    static int count=0;
     public static void main(String args[]){
-        int n=4;
+        int n=2;
         char board[][]=new char[n][n];
         for(int i=0;i<n;i++){
             for(int j=0;j<n;j++){
@@ -110,6 +111,7 @@ public class Backtracking {
             }
         }
         nQueens(board,0);
+        System.out.println("Total no of ways is " + count);
     }
 
     
