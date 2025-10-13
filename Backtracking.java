@@ -56,7 +56,7 @@ public class Backtracking {
         String str="abc";
         findPermutations(str,"");
     }*/
-    public static boolean isSafe(char board[][], int row, int col){
+    /*public static boolean isSafe(char board[][], int row, int col){
         //vertical up
         for(int i=row-1;i>=0;i--){
             if(board[i][col]=='Q'){
@@ -120,6 +120,21 @@ public class Backtracking {
             System.out.println("Solution is not possible");
         }
         //System.out.println("Total no of ways is " + count);
+    }*/
+    public static int gridWays(int i,int j,int n,int m){
+
+        if(i==n-1 && j==m-1){
+            return 1;
+        }else if(i==n|| j==m){
+            return 0;
+        }
+        int w1=gridWays(i+1, j, n, m);
+        int w2=gridWays(i, j+1, n, m);
+        return w1+w2;
+    }
+
+    public static void main(String args[]){
+        System.out.println(gridWays(0, 0, 3, 3));
     }
 
     
