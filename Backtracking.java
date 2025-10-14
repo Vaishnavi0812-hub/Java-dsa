@@ -136,7 +136,7 @@ public class Backtracking {
     public static void main(String args[]){
         System.out.println(gridWays(0, 0, 3, 3));
     }*/
-    public static boolean isSafe(int sudoku[][], int row, int col, int digit){
+    /*public static boolean isSafe(int sudoku[][], int row, int col, int digit){
         //col
         for(int i=0;i<=8;i++){
             if(sudoku[i][col] == digit){
@@ -214,7 +214,7 @@ public class Backtracking {
     }else{
         System.out.println("Solution doesnt exist");
     }
-    }
+    }*/
     
 
     
