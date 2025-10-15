@@ -215,7 +215,7 @@ public class Backtracking {
         System.out.println("Solution doesnt exist");
     }
     }*/
-    public static boolean isSafe(int maze[][], int i, int j){
+    /*public static boolean isSafe(int maze[][], int i, int j){
         return(i>=0 && i<maze.length && j>=0 && j<maze.length
          && maze[i][j]==1);
     }
@@ -273,7 +273,9 @@ public class Backtracking {
                       {1,0,0,0},
                       {1,1,1,1}};
         solveMaze(maze);
-    }
+    }*/
+
+    
     
 
     
