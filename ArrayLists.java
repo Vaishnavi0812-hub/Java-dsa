@@ -4,11 +4,29 @@ public class ArrayLists {
         ArrayList<Integer> list= new ArrayList<>();
         ArrayList<String> name= new ArrayList<>();
 
-        list.add(1);
         list.add(2);
+        list.add(5);
+        list.add(9);
         list.add(3);
-        list.add(4);
-        System.out.println(list);
+        list.add(6);
+
+        int max=Integer.MIN_VALUE;
+        for(int i=0;i<list.size();i++){
+            if(list.get(i)>max){
+                max=list.get(i);
+            }
+        }
+        System.out.println("max element is " + max);
+
+        /*for(int i=list.size()-1;i>=0;i--){
+            System.out.print(list.get(i) + " ");
+        }
+        System.out.println();*/
+        /*System.out.println(list.size());
+        for(int i=0;i<list.size();i++){
+            System.out.print(list.get(i) + " ");
+        }
+        System.out.println();*/
 
         //int element=list.get(2);
         //System.out.println(element);
@@ -18,8 +36,8 @@ public class ArrayLists {
        //list.set(1,10);
        //System.err.println(list);
 
-       System.out.println(list.contains(1));
-       System.out.println(list.contains(10));
+       //System.out.println(list.contains(1));
+       //System.out.println(list.contains(10));
         
     }
 
