@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 
+=======
+public class Backtracking {
+>>>>>>> a56fd9819a3fb4a273cbbfafb3fd798548e77ad9
     /*public static void changeArr(int arr[], int i, int val){
         if(i==arr.length){
             printArr(arr);
@@ -215,8 +219,12 @@
         System.out.println("Solution doesnt exist");
     }
     }*/
+<<<<<<< HEAD
 /*public class Backtracking {
     public static boolean isSafe(int maze[][], int i, int j){
+=======
+    /*public static boolean isSafe(int maze[][], int i, int j){
+>>>>>>> a56fd9819a3fb4a273cbbfafb3fd798548e77ad9
         return(i>=0 && i<maze.length && j>=0 && j<maze.length
          && maze[i][j]==1);
     }
@@ -268,13 +276,28 @@
         return false;
     }
 
+<<<<<<< HEAD
     public static void main(String [] args){
+=======
+    public static void main(String args[]){
+>>>>>>> a56fd9819a3fb4a273cbbfafb3fd798548e77ad9
         int maze[][]={{1,0,0,0},
                       {1,0,0,1},
                       {1,0,0,0},
                       {1,1,1,1}};
         solveMaze(maze);
+<<<<<<< HEAD
     }
 
     
 }*/
+=======
+    }*/
+
+    
+    
+
+    
+    
+}
+>>>>>>> a56fd9819a3fb4a273cbbfafb3fd798548e77ad9
