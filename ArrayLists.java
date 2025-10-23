@@ -1,29 +1,45 @@
-import java.util.ArrayList;
-import java.util.Collections;
+import java.util.*;
 public class ArrayLists {
     /*public static void swap(ArrayList<Integer>list, int idx1, int idx2){
         int temp=list.get(idx1);
         list.set(idx1, list.get(idx2));
         list.set(idx2, temp);
     }*/
+    public static int storeWater(ArrayList<Integer>height){
+        int maxWater=Integer.MIN_VALUE;
+        for(int i=0;i<height.size();i++){
+            for(int j=1;j<height.size();j++){
+                int ht=Math.min(height.get(i),height.get(j));
+                int width=j-i;
+                int currWater=ht*width;
+                maxWater=Math.max(maxWater, currWater);
+
+            }
+        }
+        return maxWater;
+    }
     public static void main(String[] args) {
-        ArrayList<Integer> list= new ArrayList<>();
+        ArrayList<Integer> height= new ArrayList<>();
         //ArrayList<String> name= new ArrayList<>();
 
-        list.add(2);
-        list.add(5);
-        list.add(9);
-        list.add(3);
-        list.add(6);
+        height.add(1);
+        height.add(8);
+        height.add(6);
+        height.add(2);
+        height.add(5);
+        height.add(4);
+        height.add(8);
+        height.add(3);
+        height.add(7);
 
-        System.out.println(list);
-        Collections.sort(list);
+        System.out.println(storeWater(height));
+       
+
+        /*Collections.sort(list);
         System.out.println(list);
 
         Collections.sort(list, Collections.reverseOrder());
-        System.out.println(list);
-
-
+        System.out.println(list);*/
 
         //System.out.println(list);
         //swap(list, 1, 3);
