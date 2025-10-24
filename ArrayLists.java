@@ -76,7 +76,7 @@ public class ArrayLists {
         }
         return false;
     }*/
-public static boolean monotonic(ArrayList<Integer> list){
+/*public static boolean monotonic(ArrayList<Integer> list){
     for(int i=0;i<list.size();i++){
         for(int j=i+1;j<list.size();j++){
             if(list.get(i)<list.get(i+1) || list.get(i)>list.get(i+1)){
@@ -85,6 +85,24 @@ public static boolean monotonic(ArrayList<Integer> list){
         }
     }
     return false;
+}*/
+public static int frequentNumber(ArrayList<Integer> list, int key){
+    int result[]=new int[1000];
+    for(int i=0;i<list.size()-1;i++){
+        if(list.get(i)==key){
+            result[list.get(i+1)-1]++;
+        }
+    }
+    int max=Integer.MIN_VALUE;
+    int ans=0;
+
+    for(int i=0;i<1000;i++){
+        if(result[i]>max){
+            max=result[i];
+            ans=i+1;
+        }
+    }
+    return ans;
 }
 
 
@@ -94,16 +112,15 @@ public static boolean monotonic(ArrayList<Integer> list){
         //ArrayList<String> name= new ArrayList<>();
 
         list.add(1);
-        list.add(3);
-        list.add(2);
-        list.add(3);
-        System.out.println(monotonic(list));
-        
+        list.add(100);
+        list.add(200);
+        list.add(1);
+        list.add(100);
+        System.out.println(frequentNumber(list, 1));
 
+         
+        //System.out.println(monotonic(list));
         //System.out.println(pairSum2(list, 16));
-        
-
-        
         //System.out.println(storeWater(height));
         /*Collections.sort(list);
         System.out.println(list);
