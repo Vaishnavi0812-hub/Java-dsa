@@ -86,7 +86,7 @@ public class ArrayLists {
     }
     return false;
 }*/
-public static int frequentNumber(ArrayList<Integer> list, int key){
+/*public static int frequentNumber(ArrayList<Integer> list, int key){
     int result[]=new int[1000];
     for(int i=0;i<list.size()-1;i++){
         if(list.get(i)==key){
@@ -103,7 +103,7 @@ public static int frequentNumber(ArrayList<Integer> list, int key){
         }
     }
     return ans;
-}
+}*/
 
 
     
