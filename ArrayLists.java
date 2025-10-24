@@ -51,7 +51,7 @@ public class ArrayLists {
         }
         return false;
     }*/
-    public static boolean pairSum2(ArrayList<Integer> list, int target){
+    /*public static boolean pairSum2(ArrayList<Integer> list, int target){
         int bp=-1;
         int n=list.size();
         for(int i=0;i<list.size();i++){
@@ -75,18 +75,32 @@ public class ArrayLists {
             }
         }
         return false;
+    }*/
+public static boolean monotonic(ArrayList<Integer> list){
+    for(int i=0;i<list.size();i++){
+        for(int j=i+1;j<list.size();j++){
+            if(list.get(i)<list.get(i+1) || list.get(i)>list.get(i+1)){
+                return true;
+            }
+        }
     }
+    return false;
+}
+
+
+    
     public static void main(String[] args) {
         ArrayList<Integer> list= new ArrayList<>();
         //ArrayList<String> name= new ArrayList<>();
 
-        list.add(11);
-        list.add(15);
-        list.add(6);
-        list.add(8);
-        list.add(9);
-        list.add(10);
-        System.out.println(pairSum2(list, 16));
+        list.add(1);
+        list.add(3);
+        list.add(2);
+        list.add(3);
+        System.out.println(monotonic(list));
+        
+
+        //System.out.println(pairSum2(list, 16));
         
 
         
