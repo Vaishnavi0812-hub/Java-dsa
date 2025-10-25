@@ -1,4 +1,6 @@
-import java.util.*;
+
+import java.util.ArrayList;
+
 public class ArrayLists {
     /*public static void swap(ArrayList<Integer>list, int idx1, int idx2){
         int temp=list.get(idx1);
@@ -104,7 +106,7 @@ public class ArrayLists {
     }
     return ans;
 }*/
-public static ArrayList<Integer> lonelyNumbers(ArrayList<Integer> list){
+/*public static ArrayList<Integer> lonelyNumbers(ArrayList<Integer> list){
     Collections.sort(list);
     ArrayList<Integer>nums=new ArrayList<>();
 
@@ -126,19 +128,35 @@ public static ArrayList<Integer> lonelyNumbers(ArrayList<Integer> list){
     }
     return nums;
 
+}*/
+public static ArrayList<Integer> beautifulArray(int n){
+    ArrayList<Integer>ans=new ArrayList<>();
+    DivideAndConquer(1,1,ans,n);
+    return ans;
+}
+
+public static void DivideAndConquer(int start, int inc, ArrayList<Integer>ans, int n){
+    if(start+inc>n){
+        ans.add(start);
+        return;
+    }
+    DivideAndConquer(start, 2*inc, ans, n);
+    DivideAndConquer(start+inc, inc*2, ans, n);
+
 }
 
 
     
     public static void main(String[] args) {
-        ArrayList<Integer> list= new ArrayList<>();
+        System.out.println(beautifulArray(4));
+        //ArrayList<Integer> list= new ArrayList<>();
         //ArrayList<String> name= new ArrayList<>();
 
-        list.add(10);
-        list.add(6);
-        list.add(5);
-        list.add(8);
-        System.out.println(lonelyNumbers(list));
+        //list.add(10);
+        //list.add(6);
+        //list.add(5);
+        //list.add(8);
+        //System.out.println(lonelyNumbers(list));
         
 
 
