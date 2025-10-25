@@ -104,6 +104,29 @@ public class ArrayLists {
     }
     return ans;
 }*/
+public static ArrayList<Integer> lonelyNumbers(ArrayList<Integer> list){
+    Collections.sort(list);
+    ArrayList<Integer>nums=new ArrayList<>();
+
+    for(int i=1;i<list.size()-1;i++){
+        if(list.get(i)> list.get(i-1)+1 && list.get(i+1)> list.get(i) +1){
+            nums.add(list.get(i));
+        }
+    }
+
+    if(list.size()>1 && list.get(0) +1 <list.get(1)){
+        nums.add(list.get(0));
+    }
+
+    if(list.size()>1 && list.get(list.size()-2)+1<list.get(list.size()-1)){
+        nums.add(list.get(list.size()-1));
+    }
+    if(list.size()==1){
+        nums.add(list.get(0));
+    }
+    return nums;
+
+}
 
 
     
@@ -111,14 +134,15 @@ public class ArrayLists {
         ArrayList<Integer> list= new ArrayList<>();
         //ArrayList<String> name= new ArrayList<>();
 
-        list.add(1);
-        list.add(100);
-        list.add(200);
-        list.add(1);
-        list.add(100);
-        System.out.println(frequentNumber(list, 1));
+        list.add(10);
+        list.add(6);
+        list.add(5);
+        list.add(8);
+        System.out.println(lonelyNumbers(list));
+        
 
-         
+
+        //System.out.println(frequentNumber(list, 1));
         //System.out.println(monotonic(list));
         //System.out.println(pairSum2(list, 16));
         //System.out.println(storeWater(height));
